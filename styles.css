@@ -7,6 +7,24 @@
     font-family: 'Roboto', sans-serif;
 }
 
+#errorMessage{
+    display: none;
+    color: black;
+}
+
+.blue{
+    color: rgb(40, 40, 163);
+    font-weight: 400;
+}
+
+.blue2{
+    color: rgb(40, 40, 163);
+}
+
+input:focus{
+    border: 2px solid rgb(40, 40, 163);
+}
+
 /* HEADER */
 
 .content-wrapper{
@@ -30,6 +48,7 @@
 .personal__logo{
     height: 70px;
     width: 70px;
+    margin-left: 48px;
 }
 
 .nav__list{
@@ -41,15 +60,13 @@
     max-width: 430px;
 }
 
-.blue{
-    color: rgb(61, 61, 187);
-}
-
 .nav__text{
+    color: black;
     letter-spacing: 0.01em;
+    font-weight: 400;
     text-decoration: none;
     padding: 0px 12px;
-    letter-spacing: .01em;
+    letter-spacing: .03em;
 }
 
 .btn__contact{
@@ -62,10 +79,16 @@
     color: white;
     font-weight: 700;
     font-size: 13px;
-    background-color: rgb(61, 61, 187);
+    background-color: rgb(40, 40, 163);
+    border: 1px solid rgb(40, 40, 163);
     padding: 14px 36px;
     border-radius: 50px;
     margin-left: 12px;
+}
+
+.btn__contact:hover{
+    background-color: rgb(9, 49, 182);
+    border: 1px solid rgb(9, 49, 182);
 }
 
 /* LANDING PAGE */
@@ -90,7 +113,76 @@
 .landing__box{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+}
+
+h1{
+    font-size: 50px;
+    max-width: 730px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: rgb(40, 40, 163);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #0a1f44;
+    letter-spacing: .01em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.landing__form{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.landing__search{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #0a1f44;
+    display: inline-block;
+    height: 70px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 16px;
+    width: 100%;
+    font-size: 24px;
+    padding-left: 25px;
+}
+
+.landing__btn{
+    width: 200px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+}
+
+.landing__btn{
+    background-color: rgb(40, 40, 163);
+    border: 1px solid rgb(40, 40, 163);
+    box-shadow: 7px 7px 14px rgba(176, 176, 250, 0.171);
+    cursor: pointer;
+}
+
+.landing__btn:hover{
+    background-color: rgb(9, 49, 182);
+    border: 1px solid rgb(9, 49, 182);
+}
+
+.btn__img{
+    height: 36px;
+    display: flex;
+    margin: 0 auto;
+    filter: invert(1);
 }
