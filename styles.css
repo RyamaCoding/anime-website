@@ -91,6 +91,66 @@ input:focus{
     border: 1px solid rgb(9, 49, 182);
 }
 
+/* BURGER MENU*/
+
+.btn__menu{
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: rgb(40, 40, 163);
+    cursor: pointer;
+}
+
+.menu__backdrop{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu--open .menu___backdrop{
+    display: flex;
+}
+
+.btn__menu--close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: rgb(40, 40, 163);
+    cursor: pointer;
+}
+
+.btn__menu--close:hover{
+    color: rgb(9, 49, 182);
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu__list{
+    padding: 48px 0px;
+}
+
+.menu__link{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600px;
+    color: rgb(40, 40, 163);
+}
+
 /* LANDING PAGE */
 
 #landing-page{
@@ -185,4 +245,10 @@ h2{
     display: flex;
     margin: 0 auto;
     filter: invert(1);
+}
+
+@media (max-width: 750px) {
+    .nav__list{
+        display: none;
+    }
 }
