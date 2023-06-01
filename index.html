@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="nav__bar">
+    <nav class="nav__bar">
       <div class="content-wrapper">
         <img src="./assets/rc_logo_black.png" class="personal__logo" alt="" />
         <ul class="nav__list">
@@ -28,6 +28,7 @@
             <button href="" id="contactButton" onclick="showErrorMessage()" class="btn__contact">CONTACT</button>
           </li>
         </ul>
+
       <button class="btn__menu" onclick="openMenu()">
         <i class="fas fa-bars"></i>
       </button>
@@ -36,13 +37,13 @@
           <i class="fas fa-times"></i>
         </button>
         <ul class="menu__links">
-          <li class="menu__list"><a href="#" class="menu__link">Home</a></li>
-          <li class="menu__list"><a href="#anime" class="menu__link">Find your anime</a></li>
-          <li class="menu__list"><a href="#" class="menu__link no cursor">Contact</a></li>
+          <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
+          <li class="menu__list"><a href="#anime" class="menu__link" onclick="closeMenu()">Find your anime</a></li>
+          <li class="menu__list"><a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a></li>
         </ul>
       </div>
     </div>
-    </header>
+  </nav>
 
     <section id="landing-page">
       <div class="container">

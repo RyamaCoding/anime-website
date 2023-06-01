@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.no-cursor{
+    cursor: not-allowed;
+}
+
 #errorMessage{
     display: none;
     color: black;
@@ -91,15 +95,20 @@ input:focus{
     border: 1px solid rgb(9, 49, 182);
 }
 
-/* BURGER MENU*/
+/* TEST */
 
-.btn__menu{
+.btn__menu {
     background-color: transparent;
     font-size: 40px;
     text-align: center;
     border: none;
     color: rgb(40, 40, 163);
+    display: none;
     cursor: pointer;
+}
+
+.btn__menu:hover{
+    color: rgb(9, 49, 182);
 }
 
 .menu__backdrop{
@@ -113,11 +122,41 @@ input:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
 }
 
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
 
-.menu--open .menu___backdrop{
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__links{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu__list{
+    padding: 64px 0px;
+}
+
+.menu__link{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600px;
+    color: rgb(40, 40, 163);
+}
+
+.menu__link:hover{
+    text-decoration: underline;
 }
 
 .btn__menu--close{
@@ -129,26 +168,8 @@ input:focus{
     cursor: pointer;
 }
 
-.btn__menu--close:hover{
-    color: rgb(9, 49, 182);
-}
-
-.menu__links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-}
-
-.menu__list{
-    padding: 48px 0px;
-}
-
-.menu__link{
-    text-decoration: none;
-    font-size: 40px;
-    font-weight: 600px;
-    color: rgb(40, 40, 163);
+.menu__link:hover{
+    text-decoration: underline;
 }
 
 /* LANDING PAGE */
@@ -247,8 +268,16 @@ h2{
     filter: invert(1);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 860px) {
     .nav__list{
         display: none;
+    }
+
+    .btn__menu{
+        display: block;
+    }
+
+    .personal__logo{
+        margin: 0;    
     }
 }
