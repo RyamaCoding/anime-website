@@ -16,13 +16,15 @@
   <body>
     <nav class="nav__bar">
       <div class="content-wrapper">
-        <img src="./assets/rc_logo_black.png" class="personal__logo" alt="" />
+        <a href="https://github.com/RyamaCoding" target="_blank">
+          <img src="./assets/rc_logo_black.png" class="personal__logo" alt="GitHub" />
+        </a>
         <ul class="nav__list">
           <li class="nav__link">
-            <a href="#" class="nav__text"> <span class="blue">Home</span></a>
+            <a href="#" class="nav__text nav__text-effect"> <span class="blue">Home</span></a>
           </li>
           <li class="nav__link">
-            <a href="#" class="nav__text">Find your anime</a>
+            <a href="#" class="nav__text nav__text-effect2">Find your anime</a>
           </li>
           <li class="nav__link">
             <button href="" id="contactButton" onclick="showErrorMessage()" class="btn__contact">CONTACT</button>
@@ -37,9 +39,9 @@
           <i class="fas fa-times"></i>
         </button>
         <ul class="menu__links">
-          <li class="menu__list"><a href="#" class="menu__link" onclick="closeMenu()">Home</a></li>
-          <li class="menu__list"><a href="#anime" class="menu__link" onclick="closeMenu()">Find your anime</a></li>
-          <li class="menu__list"><a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a></li>
+          <li class="menu__list"><a href="#" class="menu__link nav__text-effect3" onclick="closeMenu()">Home</a></li>
+          <li class="menu__list"><a href="#anime" class="menu__link nav__text-effect3" onclick="closeMenu()">Find your anime</a></li>
+          <li class="menu__list"><a href="#" class="menu__link no-cursor nav__text-effect3" onclick="closeMenu()">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -48,12 +50,15 @@
     <section id="landing-page">
       <div class="container">
         <div class="landing__box">
-          <div>
+          <div class="landing__description">
             <h1 class="landing__title">Welcome to the UK's #1 anime search engine</h1>
             <h2 class="landing__sub-title">Find the <span class="blue2">anime</span> of your <span class="blue2">choice</span></h2>
             <form action="" class="landing__form">
               <input type="text" id="search-input" placeholder="Search for your favourite animes here" class="landing__search">
-              <button type="submit" id="search-button" class="landing__btn"><img class="btn__img" src="./assets/magnifying-glass-solid.svg"></img></button>
+              <button type="submit" id="search-button" class="landing__btn btn__loading" onclick="startLoading()">
+                <img class="btn__img" src="./assets/magnifying-glass-solid.svg"></img>
+                <img class="btn__img--loading" src="./assets/spinner-solid.svg" alt="">
+              </button>
             </form>
           </div>
           <img src="./assets/megumipng.gif" alt="" class="landing__img">

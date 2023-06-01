@@ -9,3 +9,14 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu--open')
   }
+
+  function startLoading() {
+    const button = document.getElementById("search-button");
+    button.classList.add("loading");
+  }
+
+  function stopLoading() {
+    const button = document.getElementById("search-button");
+    button.classList.remove("loading");
+  }
+
