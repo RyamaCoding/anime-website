@@ -356,7 +356,7 @@ h1 {
   margin: 0 auto;
   filter: invert(1);
   display: none;
-  animation: rotate 2000ms infinite linear;
+  animation: rotate 800ms infinite linear;
 }
 
 @keyframes rotate {
@@ -370,7 +370,7 @@ h1 {
 }
 
 #search-button.loading .btn__img {
-  display: none !important;
+  display: none;
 }
 
 #search-button.loading .btn__img--loading {
