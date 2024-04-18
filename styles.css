@@ -29,7 +29,7 @@
   color: white;
   font-weight: 600;
   font-size: 20px;
-  text-shadow: 2px 2px 4px #000;
+  text-shadow: 2px 1px 4px #000;
 }
 
 input:focus {
@@ -517,5 +517,60 @@ h1 {
     font-size: 30px;
   }
 }
+
+/* anime page cards */ 
+
+.card__img{
+  width: 100%;
+  max-width: 200px;
+}
+
+.anime__row{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 350px);
+}
+
+.card__wrapper{
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  margin: 20px 0px 50px 0px
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 24px;
+}
+
+.card__content{
+  background-color: #c2c2c2;
+  width: 100%;
+  max-width: 200px;
+  padding-bottom: 24px;
+}
+
+.card__title{
+  font-size: 24px;
+  margin: 24px 0px;
+  color: #2828a3;
+}
+
+.card__para{
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #2828a3;
+}
+
+
 
 

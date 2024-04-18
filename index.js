@@ -1,3 +1,10 @@
+// API 1: https://api.jikan.moe/v4/anime
+
+
+
+
+/* Burger Menu and Loading state */
+
 function showErrorMessage() {
     alert('This feature has yet to be implemented');
   };

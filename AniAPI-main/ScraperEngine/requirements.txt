@@ -1,7 +1,0 @@
-beautifulsoup4
-falcon
-aiohttp
-brotli
-ujson
-pymongo
-cda_downloader
