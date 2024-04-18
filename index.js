@@ -19,7 +19,7 @@ function closeMenu() {
 
   function startLoading() {
     const button = document.getElementById("search-button");
-    button.classList.add("loading");
+    button.classList += ("loading");
   }
 
   function stopLoading() {
