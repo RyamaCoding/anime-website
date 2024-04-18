@@ -537,7 +537,7 @@ h1 {
   max-width: 1200px;
   height: 100%;
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 20px 0px 50px 0px
 }
@@ -545,7 +545,8 @@ h1 {
 .card{
   display: flex;
   flex-direction: column;
-  width: calc(100% / 3);
+  width: calc(30%);
+  height: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -560,9 +561,10 @@ h1 {
 }
 
 .card__title{
-  font-size: 24px;
+  font-size: 20px;
   margin: 24px 0px;
   color: #2828a3;
+  padding: 0px 12px;
 }
 
 .card__para{

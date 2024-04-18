@@ -48,7 +48,7 @@
             <div class="nav__description">
                 <h2 class="landing__sub-title nav__sub-title">Find the <span class="white2">anime</span> of your <span class="white2">choice</span></h2>
                 <form action="" class="landing__form">
-                    <input type="text" id="search-input" placeholder="Search for your favourite animes here" class="landing__search">
+                    <input type="text" id="search-input" placeholder="Search for your favourite animes here" class="landing__search" onchange="onSearchChange(event)">
                     <button type="submit" id="search-button" class="landing__btn btn__loading" onclick="startLoading()">
                         <img class="btn__img" src="./assets/magnifying-glass-solid.svg"></img>
                         <img class="btn__img--loading" src="./assets/spinner-solid.svg" alt="">
@@ -61,33 +61,6 @@
         <section id="anime">
             <div class="anime__row">
                 <div class="card__wrapper">
-                    <div class="card">
-                        <img src="./assets/shinei.jpg" alt="anime-image" class="card__img">
-                        <div class="card__content">
-                            <h2 class="card__title">anime</h2>
-                            <p class="card__para"><b>Year:</b> 2012</p>
-                            <p class="card__para"><b>Episodes:</b> 5</p>
-                            <p class="card__para"><b>Rank:</b> 5</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/shinei.jpg" alt="anime-image" class="card__img">
-                        <div class="card__content">
-                            <h2 class="card__title">anime</h2>
-                            <p class="card__para"><b><span class="black">Year:</span></b> 2012</p>
-                            <p class="card__para"><b><span class="black">Episodes:</span></b> 5</p>
-                            <p class="card__para"><b><span class="black">Rank:</span></b> 5</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./assets/shinei.jpg" alt="anime-image" class="card__img">
-                        <div class="card__content">
-                            <h2 class="card__title">anime</h2>
-                            <p class="card__para"><b>Year:</b> 2012</p>
-                            <p class="card__para"><b>Episodes:</b> 5</p>
-                            <p class="card__para"><b>Rank:</b> 5</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
